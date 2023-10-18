@@ -2,3 +2,116 @@
 @import url('_partials/variables.css');
 @import url('_partials/common.css');
 @import url('_partials/typo.css');
+
+/* #region HEADER */
+
+.row.menu nav {
+  background-color: var(--header-color);
+  height: calc(100vh - 90px);
+  width: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.row.menu nav .top-content,
+.row.menu nav h2 {
+  font-size: 0.875rem;
+}
+
+.row.menu nav ul li {
+  margin-bottom: 22px;
+}
+
+.row.menu nav ul li:not(:first) {
+  overflow: auto;
+}
+
+.row.menu nav img:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.row.menu nav img:last-child {
+  background-color: #808080;
+  border-radius: 50%;
+}
+
+/* #endregion */
+
+/* #region MEDIA QUERIES */
+
+@media screen and (min-width: 576px) {
+  .display-none {
+    display: block;
+  }
+
+  #small-logo {
+    display: none;
+  }
+
+  #logo {
+    max-width: 130px;
+  }
+
+  .row.menu nav {
+    width: 230px;
+  }
+
+  .row.menu nav .home,
+  .row.menu nav .cerca,
+  .row.menu nav .tua-libreria,
+  .row.menu nav .donwload,
+  .row.menu nav .profile {
+    display: flex;
+  }
+
+  .row.menu nav .home img,
+  .row.menu nav .cerca img,
+  .row.menu nav .tua-libreria img,
+  .row.menu nav .bottom-content img {
+    max-width: 20px;
+  }
+
+  .row.menu nav span,
+  .row.menu nav strong,
+  .row.menu nav h2,
+  .row.menu nav a {
+    color: var(--white-color);
+  }
+
+  .row.menu nav i {
+    color: var(--header-color);
+    padding: 10px;
+    background-color: #808080;
+    margin-right: 10px;
+  }
+
+  .row.menu nav img {
+    margin-right: 8px;
+  }
+
+  .row.menu nav span,
+  .row.menu nav strong,
+  .row.menu nav a {
+    color: var(--main-text-color);
+  }
+
+  .row.menu nav .profile strong {
+    color: var(--white-color);
+  }
+
+  .row.menu nav h2 {
+    margin: 30px 0 15px 0;
+  }
+
+  .row.menu nav a {
+    text-decoration: none;
+  }
+
+  .row.menu nav hr {
+    margin: 8px 0;
+  }
+}
+/* #endregion */
