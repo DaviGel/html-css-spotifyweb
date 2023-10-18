@@ -84,6 +84,7 @@
 
   .row.menu nav .scroll {
     overflow-y: scroll;
+    min-height: 255px;
   }
 
   .row.menu nav i {
