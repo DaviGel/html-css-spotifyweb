@@ -53,6 +53,7 @@
 
   #logo {
     max-width: 130px;
+    margin-bottom: 30px;
   }
 
   .row.menu nav {
@@ -79,6 +80,10 @@
   .row.menu nav h2,
   .row.menu nav a {
     color: var(--white-color);
+  }
+
+  .row.menu nav .scroll {
+    overflow-y: scroll;
   }
 
   .row.menu nav i {
