@@ -33,9 +33,41 @@
   margin-bottom: 17px;
 }
 
-.row.menu nav img:last-child {
+.row.menu nav .rounded {
+  width: 26px;
+  height: 26px;
+  overflow: hidden;
+}
+
+.row.menu nav .download {
+  text-align: center;
+}
+
+.row.menu nav .rounded img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   background-color: #808080;
   border-radius: 50%;
+}
+
+.row.menu nav .download img:first-child {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+}
+
+/* #endregion */
+
+/* #region FOOTER */
+
+footer {
+  background-color: var(--footer-color);
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 /* #endregion */
@@ -63,7 +95,7 @@
   .row.menu nav .home,
   .row.menu nav .cerca,
   .row.menu nav .tua-libreria,
-  .row.menu nav .donwload,
+  .row.menu nav .download,
   .row.menu nav .profile {
     display: flex;
   }
@@ -83,8 +115,10 @@
   }
 
   .row.menu nav .scroll {
-    overflow-y: scroll;
-    min-height: 255px;
+    overflow: auto;
+    height: 255px;
+    min-height: 50px;
+    margin-top: 20px;
   }
 
   .row.menu nav i {
@@ -98,10 +132,24 @@
     margin-right: 8px;
   }
 
+  .row.menu nav hr {
+    margin: 10px 0 15px 0;
+  }
+
   .row.menu nav span,
   .row.menu nav strong,
   .row.menu nav a {
     color: var(--main-text-color);
+  }
+
+  .row.menu nav .download,
+  .row.menu nav .profile {
+    align-items: center;
+  }
+
+  .row.menu nav .download img,
+  .row.menu nav .profile img {
+    margin-bottom: 0;
   }
 
   .row.menu nav .profile strong {
@@ -116,8 +164,8 @@
     text-decoration: none;
   }
 
-  .row.menu nav hr {
-    margin: 8px 0;
+  .row.menu nav .rounded {
+    height: auto;
   }
 }
 /* #endregion */
