@@ -6,3 +6,7 @@ img {
 .display-none {
   display: none;
 }
+
+.gray-text {
+  color: var(--main-text-color);
+}
