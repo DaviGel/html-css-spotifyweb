@@ -48,6 +48,14 @@
   padding: 0 10px;
 }
 
+.row.menu nav .scroll {
+  flex-grow: 1;
+}
+
+.row.menu nav .download {
+  margin-top: auot;
+}
+
 .row.menu nav .playlist {
   min-height: 100px;
 }
@@ -55,6 +63,10 @@
 .row.menu nav .playlist,
 .row.menu nav .bottom-content {
   padding: 10px;
+}
+
+.row.menu nav .playlist {
+  flex-grow: 1;
 }
 
 .row.menu nav .bottom-content {
