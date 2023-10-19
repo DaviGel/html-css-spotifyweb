@@ -9,11 +9,16 @@
   background-color: var(--header-color);
   height: calc(100vh - 90px);
   width: 50px;
-  padding: 10px;
+  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
+}
+
+.row.menu nav #logo,
+.row.menu nav #small-logo {
+  padding: 5px 10px;
 }
 
 .row.menu nav .top-content,
@@ -37,6 +42,12 @@
 .row.menu nav .cerca,
 .row.menu nav .tua-libreria {
   margin-bottom: 15px;
+  padding: 0 10px 0 10px;
+}
+
+.row.menu nav .playlist,
+.row.menu nav .bottom-content {
+  padding: 10px;
 }
 
 .row.menu nav .rounded {
@@ -92,7 +103,6 @@ footer {
 
   #logo {
     max-width: 130px;
-    margin-bottom: 30px;
   }
 
   .row.menu nav {
