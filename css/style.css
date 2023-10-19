@@ -93,11 +93,6 @@
 
 /* #region MAIN */
 
-main {
-  width: calc(100vw - 50px);
-  height: calc(100vh - 90px);
-}
-
 /* #endregion */
 
 /* #region FOOTER */
