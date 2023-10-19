@@ -137,6 +137,7 @@ main .top-bar .btn {
   color: #fff;
   padding: 15px 40px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* #endregion */
