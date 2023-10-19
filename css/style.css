@@ -5,6 +5,10 @@
 
 /* #region HEADER */
 
+.row.menu {
+  display: flex;
+}
+
 .row.menu nav {
   background-color: var(--header-color);
   height: calc(100vh - 90px);
@@ -19,8 +23,7 @@
   flex-direction: column;
 }
 
-.row.menu nav #logo,
-.row.menu nav #small-logo {
+.row.menu nav .logo {
   padding: 5px 10px;
 }
 
@@ -88,6 +91,15 @@
 
 /* #endregion */
 
+/* #region MAIN */
+
+main {
+  width: calc(100vw - 50px);
+  height: calc(100vh - 90px);
+}
+
+/* #endregion */
+
 /* #region FOOTER */
 
 footer {
@@ -106,6 +118,11 @@ footer {
 @media screen and (min-width: 576px) {
   .display-none {
     display: block;
+  }
+
+  .playlist.display-none {
+    display: flex;
+    flex-direction: column;
   }
 
   #small-logo {
@@ -153,9 +170,9 @@ footer {
   }
 
   .row.menu nav .scroll {
-    overflow-y: scroll;
-    height: 255px;
+    overflow-y: auto;
     margin-top: 20px;
+    min-height: 100px;
   }
 
   .row.menu nav i {
@@ -211,6 +228,8 @@ footer {
 
   .row.menu nav .playlist {
     min-height: 100px;
+    flex-grow: 1;
+    overflow: hidden;
   }
 }
 /* #endregion */
