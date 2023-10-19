@@ -212,6 +212,74 @@ footer {
   right: 0;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .left-content,
+footer .right-content {
+  width: 30%;
+}
+
+footer .left-content {
+  display: flex;
+  align-items: center;
+}
+
+footer .left-content img {
+  width: 42px;
+  height: 42px;
+  margin: 0 11px 0;
+}
+
+footer .left-content .text {
+  color: var(--white-color);
+}
+
+footer .left-content .text > div {
+  font-size: small;
+}
+
+footer .right-content {
+  text-align: end;
+}
+
+footer .icons {
+  margin-left: 43px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+footer .central-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+}
+
+footer .bottom-content {
+  display: flex;
+  align-items: center;
+  height: 19px;
+}
+
+footer .left-bar {
+  width: 26px;
+  height: 4px;
+  background-color: var(--white-color);
+  margin-left: 10px;
+}
+
+footer .right-bar {
+  width: 100px;
+  height: 4px;
+  background-color: var(--main-text-color);
+  margin-right: 10px;
+}
+
 /* #endregion */
 
 /* #region MEDIA QUERIES */
@@ -276,7 +344,6 @@ footer {
   .row.menu nav .scroll {
     overflow-y: auto;
     margin-top: 20px;
-    min-height: 100px;
   }
 
   .row.menu nav i {
@@ -331,16 +398,24 @@ footer {
   }
 
   .row.menu nav .playlist {
-    min-height: 100px;
     flex-grow: 1;
     overflow: hidden;
   }
+
+  /* FOOTER */
+  footer .left-content .icons {
+    gap: 7px;
+  }
 }
 
-/* m */
+/* md */
 @media screen and (min-width: 768px) {
   main .row .col {
     width: calc(100% / 4 - 25px);
+  }
+
+  footer .icons {
+    flex-direction: row;
   }
 }
 
