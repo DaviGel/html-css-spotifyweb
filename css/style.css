@@ -9,11 +9,14 @@
   background-color: var(--header-color);
   height: calc(100vh - 90px);
   width: 50px;
-  /* padding: 10px; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   overflow: hidden;
+}
+
+.row.menu nav .top-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .row.menu nav #logo,
@@ -42,12 +45,20 @@
 .row.menu nav .cerca,
 .row.menu nav .tua-libreria {
   margin-bottom: 15px;
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
+}
+
+.row.menu nav .playlist {
+  min-height: 100px;
 }
 
 .row.menu nav .playlist,
 .row.menu nav .bottom-content {
   padding: 10px;
+}
+
+.row.menu nav .bottom-content {
+  margin-top: auto;
 }
 
 .row.menu nav .rounded {
@@ -109,6 +120,10 @@ footer {
     width: 230px;
   }
 
+  .row.menu nav .home {
+    border-left: 3px solid greenyellow;
+  }
+
   .row.menu nav .home,
   .row.menu nav .cerca,
   .row.menu nav .tua-libreria,
@@ -138,9 +153,8 @@ footer {
   }
 
   .row.menu nav .scroll {
-    overflow: auto;
+    overflow-y: scroll;
     height: 255px;
-    min-height: 50px;
     margin-top: 20px;
   }
 
