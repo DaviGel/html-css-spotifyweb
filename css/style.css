@@ -33,6 +33,12 @@
   margin-bottom: 17px;
 }
 
+.row.menu nav .home,
+.row.menu nav .cerca,
+.row.menu nav .tua-libreria {
+  margin-bottom: 15px;
+}
+
 .row.menu nav .rounded {
   width: 26px;
   height: 26px;
@@ -55,6 +61,7 @@
   width: 12px;
   height: 12px;
   display: inline-block;
+  margin-bottom: 20px;
 }
 
 /* #endregion */
@@ -107,6 +114,12 @@ footer {
     max-width: 20px;
   }
 
+  .row.menu nav .home img,
+  .row.menu nav .cerca img,
+  .row.menu nav .tua-libreria img {
+    width: 100%;
+  }
+
   .row.menu nav span,
   .row.menu nav strong,
   .row.menu nav h2,
@@ -140,6 +153,10 @@ footer {
   .row.menu nav strong,
   .row.menu nav a {
     color: var(--main-text-color);
+  }
+
+  .row.menu nav .download img:first-child {
+    margin-bottom: 0;
   }
 
   .row.menu nav .download,
