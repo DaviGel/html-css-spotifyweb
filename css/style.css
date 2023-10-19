@@ -3,6 +3,14 @@
 @import url('_partials/common.css');
 @import url('_partials/typo.css');
 
+/* #region BODY */
+
+body {
+  height: 100vh;
+}
+
+/* #endregion */
+
 /* #region HEADER */
 
 .row.menu {
@@ -11,23 +19,19 @@
 
 .row.menu nav {
   background-color: var(--header-color);
-  height: calc(100vh - 90px);
+  height: calc(100% - 90px);
   width: 50px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-}
-
-.row.menu nav .top-content {
-  display: flex;
-  flex-direction: column;
+  flex-shrink: 0;
 }
 
 .row.menu nav .logo {
   padding: 5px 10px;
+  margin-bottom: 15px;
 }
 
-.row.menu nav .top-content,
 .row.menu nav h2 {
   font-size: 0.875rem;
 }
@@ -93,6 +97,48 @@
 
 /* #region MAIN */
 
+main {
+  width: 100%;
+  background-color: var(--main-color);
+  flex-grow: 1;
+}
+
+main .top-bar {
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+  vertical-align: middle;
+  line-height: 90px;
+  text-align: end;
+}
+
+main .menu ul {
+  display: flex;
+}
+
+main .menu ul li {
+  list-style: none;
+  margin-right: 25px;
+}
+
+main .menu ul li a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+main .menu ul li:first-child {
+  padding-bottom: 5px;
+  border-bottom: 3px solid greenyellow;
+}
+
+main .top-bar .btn {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: #fff;
+  padding: 15px 40px;
+  font-weight: bold;
+}
+
 /* #endregion */
 
 /* #region FOOTER */
@@ -119,6 +165,8 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
+  /* NAV */
 
   #small-logo {
     display: none;
@@ -226,5 +274,7 @@ footer {
     flex-grow: 1;
     overflow: hidden;
   }
+
+  /* MAIN */
 }
 /* #endregion */
