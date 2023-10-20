@@ -120,8 +120,6 @@ main .top-bar {
   z-index: 1;
   height: 90px;
   background-color: rgba(0, 0, 0, 0.5);
-  vertical-align: middle;
-  line-height: 90px;
   text-align: end;
 }
 
@@ -173,7 +171,7 @@ main .top-bar .btn {
   padding: 15px 40px;
   font-weight: bold;
   cursor: pointer;
-  margin-right: 20px;
+  margin: 20px 20px 20px 0;
 }
 
 main .row {
