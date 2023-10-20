@@ -27,6 +27,14 @@ body {
   flex-shrink: 0;
 }
 
+.row.menu nav #small-logo {
+  margin-top: 5px;
+}
+
+.row.menu nav #logo {
+  margin-top: 20px;
+}
+
 .row.menu nav .logo {
   padding: 5px 10px;
   margin-bottom: 15px;
@@ -56,7 +64,7 @@ body {
 }
 
 .row.menu nav .download {
-  margin-top: auot;
+  margin-top: auto;
 }
 
 .row.menu nav .playlist,
@@ -68,14 +76,14 @@ body {
   margin-top: auto;
 }
 
+.row.menu nav .download {
+  text-align: center;
+}
+
 .row.menu nav .rounded {
   width: 26px;
   height: 26px;
   overflow: hidden;
-}
-
-.row.menu nav .download {
-  text-align: center;
 }
 
 .row.menu nav .rounded img {
@@ -101,9 +109,15 @@ main {
   background-color: var(--main-color);
   flex-grow: 1;
   overflow-y: auto;
+  padding-top: 90px;
 }
 
 main .top-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
   height: 90px;
   background-color: rgba(0, 0, 0, 0.5);
   vertical-align: middle;
@@ -186,8 +200,17 @@ main .main-content {
   color: var(--white-color);
 }
 
+main .main-content h3 {
+  margin-bottom: 12px;
+}
+
 main .main-content .row > div > div {
   color: var(--main-text-color);
+}
+
+main .second-content h2,
+main .third-content h2 {
+  margin-bottom: 12px;
 }
 
 main .second-content,
@@ -215,6 +238,10 @@ footer {
 footer {
   display: flex;
   justify-content: space-between;
+}
+
+footer i {
+  font-size: large;
 }
 
 footer .left-content,
@@ -246,7 +273,7 @@ footer .right-content {
 }
 
 footer .icons {
-  margin-left: 43px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -258,6 +285,11 @@ footer .central-content {
   justify-content: center;
   align-items: center;
   color: var(--white-color);
+  width: 40%;
+}
+
+footer .central-content .top-content {
+  width: 190px;
 }
 
 footer .bottom-content {
@@ -406,6 +438,10 @@ footer .right-bar {
   footer .left-content .icons {
     gap: 7px;
   }
+
+  footer .icons {
+    margin-left: 25px;
+  }
 }
 
 /* md */
@@ -423,6 +459,10 @@ footer .right-bar {
 @media screen and (min-width: 992px) {
   main .row .col {
     width: calc(100% / 6 - 25px);
+  }
+
+  footer .icons {
+    margin-left: 43px;
   }
 }
 
