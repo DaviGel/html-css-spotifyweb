@@ -241,7 +241,7 @@ footer {
 
 footer .left-content,
 footer .right-content {
-  width: 20%;
+  width: 230px;
 }
 
 footer .left-content {
@@ -276,7 +276,8 @@ footer .central-content {
   justify-content: center;
   align-items: center;
   color: var(--white-color);
-  width: 200px;
+  width: 40%;
+  margin: 0 20px;
 }
 
 footer .top-content {
@@ -289,18 +290,20 @@ footer .bottom-content {
   display: flex;
   align-items: center;
   height: 19px;
+  width: 100%;
+  max-width: 600px;
 }
 
-footer .central-content .bar {
-  width: 85px;
+footer .volume-bar {
+  width: 100%;
   height: 4px;
   background-color: #5a5a5a;
   border-radius: 20px;
   margin: 0 10px;
 }
 
-footer .central-content .progress-bar {
-  width: 26px;
+footer .progress-bar {
+  width: 15%;
   height: 100%;
   background-color: #c1c1c1;
   border-radius: 20px;
@@ -313,8 +316,12 @@ footer .central-content .fa-circle-play {
 footer .right-content {
   display: flex;
   align-items: center;
-  justify-content: end;
-  flex-shrink: 0;
+  justify-content: flex-end;
+}
+
+footer .right-content .pc-incons i {
+  gap: 17px;
+  flex: 1 1 auto;
 }
 
 footer .left-content i,
@@ -323,43 +330,17 @@ footer .right-content i {
   color: var(--white-color);
 }
 
-footer .right-content i {
-  margin-right: 7px;
+footer .right-content .progress-bar {
+  width: 24%;
 }
 
-footer .volume-bar {
-  flex-shrink: 0;
-  height: 4px;
-  background-color: #5a5a5a;
-  border-radius: 20px;
-  margin: 0 10px;
-}
-
-footer .progress-bar {
-  background-color: #c1c1c1;
-  border-radius: 20px;
-  height: 100%;
-}
-
-footer .central-content .volume-bar {
-  width: 129px;
-}
-
-footer .central-content .progress-bar {
-  width: 26px;
+footer .right-content .volume-bar {
+  max-width: 118px;
 }
 
 footer .pc-icons {
   display: flex;
-}
-
-footer .right-content .volume-bar {
-  width: 85px;
-  margin: 0 10px 0 -1px;
-}
-
-footer .right-content .progress-bar {
-  width: 17px;
+  gap: 10px;
 }
 
 footer .btn {
@@ -490,39 +471,16 @@ footer .btn {
     overflow: hidden;
   }
 
-  /* MAIN */
   main .top-bar {
     left: 230px;
   }
 
-  /* FOOTER */
   footer .left-content .icons {
     gap: 7px;
   }
 
   footer .icons {
     margin-left: 25px;
-  }
-
-  footer .central-content .volume-bar {
-    width: 145px;
-  }
-
-  footer .central-content .progress-bar {
-    width: 29px;
-  }
-
-  footer .right-content .volume-bar {
-    width: 104px;
-    margin: 0 10px 0 9px;
-  }
-
-  footer .right-content .progress-bar {
-    width: 21px;
-  }
-
-  footer .right-content i {
-    margin-right: 14px;
   }
 }
 
@@ -533,33 +491,8 @@ footer .btn {
     width: calc(100% / 4 - 25px);
   }
 
-  /* FOOTER */
-
   footer .icons {
     flex-direction: row;
-  }
-
-  footer .central-content .volume-bar {
-    width: 145px;
-    margin: 0 15px;
-  }
-
-  footer .central-content .progress-bar {
-    width: 29px;
-  }
-
-  footer .right-content .volume-bar {
-    width: 104px;
-    margin: 0 10px 0 9px;
-  }
-
-  footer .right-content .progress-bar {
-    width: 21px;
-    margin-left: 0;
-  }
-
-  footer .right-content i {
-    margin-right: 16px;
   }
 }
 
