@@ -288,7 +288,7 @@ footer .central-content {
 }
 
 footer .central-content .top-content {
-  width: 190px;
+  margin-bottom: 15px;
 }
 
 footer .bottom-content {
@@ -319,9 +319,19 @@ footer .right-content {
   justify-content: end;
 }
 
+footer .left-content i,
+footer .central-content i,
 footer .right-content i {
   color: var(--white-color);
+}
+
+footer .right-content i {
   margin-right: 18px;
+}
+
+footer .btn {
+  all: unset;
+  cursor: pointer;
 }
 
 /* #endregion */
