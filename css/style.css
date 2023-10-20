@@ -302,6 +302,7 @@ footer .left-bar {
   height: 4px;
   background-color: var(--white-color);
   margin-left: 10px;
+  border-radius: 20px 0 0 20px;
 }
 
 footer .right-bar {
@@ -309,6 +310,18 @@ footer .right-bar {
   height: 4px;
   background-color: var(--main-text-color);
   margin-right: 10px;
+  border-radius: 0 20px 20px 0;
+}
+
+footer .right-content {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+footer .right-content i {
+  color: var(--white-color);
+  margin-right: 18px;
 }
 
 /* #endregion */
@@ -375,6 +388,7 @@ footer .right-bar {
   .row.menu nav .scroll {
     overflow-y: auto;
     margin-top: 20px;
+    min-height: 100px;
   }
 
   .row.menu nav i {
