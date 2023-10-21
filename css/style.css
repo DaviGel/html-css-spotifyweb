@@ -174,6 +174,11 @@ main .top-bar .btn {
   margin: 20px 20px 20px 0;
 }
 
+main .top-bar .btn:hover,
+footer .fa-regular.fa-circle-play.mr-30:hover {
+  transform: scale(1.08);
+}
+
 main .row {
   display: flex;
   flex-wrap: wrap;
@@ -184,6 +189,7 @@ main .row {
 main .row .col {
   width: calc(100% / 2 - 25px);
   text-align: center;
+  position: relative;
 }
 
 main .row .col h3 {
@@ -197,6 +203,35 @@ main .row .col div {
 main .main-content {
   padding: 20px;
   color: var(--white-color);
+}
+
+main .img-container {
+  position: relative;
+}
+
+main .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  cursor: pointer;
+}
+
+main .img-container:hover .overlay {
+  opacity: 1;
+}
+
+main .main-content .img-container i {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 main .main-content h3 {
@@ -300,6 +335,7 @@ footer .volume-bar {
   background-color: #5a5a5a;
   border-radius: 20px;
   margin: 0 10px;
+  cursor: pointer;
 }
 
 footer .progress-bar {
@@ -307,6 +343,25 @@ footer .progress-bar {
   height: 100%;
   background-color: #c1c1c1;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+footer .volume-bar:hover .progress-bar {
+  background-color: greenyellow;
+  position: relative;
+}
+
+footer .volume-bar .progress-bar .fa-circle {
+  display: none;
+}
+
+footer .volume-bar:hover .progress-bar .fa-circle {
+  display: block;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(30%, -30%);
 }
 
 footer .central-content .fa-circle-play {
@@ -381,6 +436,10 @@ footer .btn {
     border-left: 3px solid greenyellow;
   }
 
+  .row.menu nav .home strong {
+    color: #fff;
+  }
+
   .row.menu nav .home,
   .row.menu nav .cerca,
   .row.menu nav .tua-libreria,
@@ -409,6 +468,10 @@ footer .btn {
     color: var(--white-color);
   }
 
+  .row.menu nav a:hover span {
+    color: #fff;
+  }
+
   .row.menu nav .scroll {
     overflow-y: auto;
     margin-top: 20px;
@@ -434,6 +497,10 @@ footer .btn {
   .row.menu nav strong,
   .row.menu nav a {
     color: var(--main-text-color);
+  }
+
+  .row.menu nav strong:hover {
+    color: #fff;
   }
 
   .row.menu nav .download img:first-child {
@@ -471,12 +538,24 @@ footer .btn {
     overflow: hidden;
   }
 
+  .row.menu nav .playlist > a:hover i {
+    background-color: #fff;
+  }
+
   main .top-bar {
     left: 230px;
   }
 
   footer .left-content .icons {
     gap: 7px;
+  }
+
+  footer .left-content .icons i {
+    color: var(--main-text-color);
+  }
+
+  footer .left-content .icons i:hover {
+    color: #fff;
   }
 
   footer .icons {
@@ -501,6 +580,19 @@ footer .btn {
   main .row .col {
     width: calc(100% / 6 - 25px);
   }
+}
+
+/* #endregion */
+
+/* #region HOVER EFFECTS */
+
+strong:hover {
+  color: #fff;
+}
+
+footer strong:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* #endregion */
