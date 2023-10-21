@@ -402,6 +402,10 @@ footer .btn {
   cursor: pointer;
 }
 
+footer .left-content .icons i:hover {
+  color: #fff;
+}
+
 /* #endregion */
 
 /* #region MEDIA QUERIES */
@@ -551,10 +555,6 @@ footer .btn {
 
   footer .left-content .icons i {
     color: var(--main-text-color);
-  }
-
-  footer .left-content .icons i:hover {
-    color: #fff;
   }
 
   footer .icons {
