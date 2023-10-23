@@ -131,7 +131,6 @@ main .menu ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
 }
 
 main .menu ul li {
