@@ -359,9 +359,9 @@ footer .volume-bar:hover .progress-bar .fa-circle {
   display: block;
   font-size: 14px;
   position: absolute;
-  top: 0;
+  top: 50%;
   right: 0;
-  transform: translate(30%, -30%);
+  transform: translate(50%, -50%);
 }
 
 footer .central-content .fa-circle-play {
